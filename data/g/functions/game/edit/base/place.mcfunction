@@ -1,0 +1,1 @@
+execute unless entity @e[tag=place] unless entity @e[tag=core,distance=..2.5] unless entity @e[tag=spawn,distance=..1.5] positioned ^ ^ ^-0.5 if block ~ ~-1 ~ #copper if score running path matches 0 run function g:game/edit/base/align

@@ -1,0 +1,11 @@
+Stratum
+Lyce
+ProtoZ
+
+blemish, blot, bruise   ;walkers
+blotch, splotch         ;screamer, spitfly
+blister                 ;snorker
+cyst                    ;soaker
+cicatrix                ;healer
+
+scar                    ;boss

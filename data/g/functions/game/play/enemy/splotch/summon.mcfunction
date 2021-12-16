@@ -1,0 +1,1 @@
+summon zombie ~ 9 ~ {Silent:1b,NoGravity:1b,Invulnerable:1b,Health:1f,Tags:["enemy","splotch"],ArmorItems:[{},{},{},{id:"minecraft:apple",Count:1b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:0},{Name:generic.movementSpeed,Base:0},{Name:generic.attackDamage,Base:0},{Name:generic.armor,Base:1},{Name:generic.armorToughness,Base:1}]}

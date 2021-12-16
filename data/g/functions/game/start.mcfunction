@@ -1,0 +1,1 @@
+execute at @e[tag=core] run spreadplayers ~ ~ 5 5 under 8 false @a

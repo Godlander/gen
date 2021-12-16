@@ -1,0 +1,1 @@
+function g:gen/path/start
