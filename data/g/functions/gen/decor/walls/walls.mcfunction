@@ -1,4 +1,4 @@
-fill ~-0.5 5 ~-0.5 ~0.5 9 ~0.5 sandstone
+fill ~-0.5 5 ~-0.5 ~0.5 11 ~0.5 sandstone
 
 #execute if entity @s[tag=north] run fill ~-0.5 5 ~-0.5 ~0.5 9 ~-0.5 sandstone
 #execute if entity @s[tag=south] run fill ~-0.5 5 ~0.5 ~0.5 9 ~0.5 sandstone

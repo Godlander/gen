@@ -25,6 +25,3 @@ execute if score steps gen matches -1 if score fails gen matches 6 run tellraw @
 #pathing
 execute unless score steps gen matches -1 run tellraw @a {"text":"Finished, attempting to create path.","color":"green"}
 execute unless score steps gen matches -1 run schedule function g:gen/path/start 1t
-
-#clean up structure voids
-execute unless score steps gen matches -1 at @e[tag=tile] run fill ~-1 0 ~-1 ~1 10 ~1 air replace minecraft:structure_void

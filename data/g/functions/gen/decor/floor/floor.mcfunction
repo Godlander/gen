@@ -1,0 +1,1 @@
+fill ~-0.5 6 ~-0.5 ~0.5 6 ~0.5 sandstone replace air

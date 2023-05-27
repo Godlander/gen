@@ -8,7 +8,7 @@ execute if score gen gen matches 1 run schedule function g:gen/decor/start 1t
 #resolve base placement
 scoreboard players set valid path 0
 execute at @e[tag=spawn] if entity @e[tag=tile,distance=..2.1,tag=pathed,tag=!blocked] run scoreboard players add valid path 1
-execute if score valid path = paths gen at @e[tag=place] if block ~ 6 ~ snow run function g:game/edit/base/resolve
+execute if score valid path = paths gen at @e[tag=place] if block ~ 7 ~ snow run function g:game/edit/base/resolve
 execute if score valid path < paths gen at @e[tag=place] run function g:game/edit/base/reject
 kill @e[tag=place]
 
@@ -17,4 +17,4 @@ scoreboard players set gen gen 2
 scoreboard players set running path 0
 scoreboard players set steps path -2
 #fix path around core
-execute at @e[tag=core] run fill ~-1.5 4 ~-1.5 ~1.5 5 ~1.5 raw_copper_block replace #copper
+execute at @e[tag=core] run fill ~-2.5 4 ~-2.5 ~2.5 5 ~2.5 raw_copper_block replace #copper

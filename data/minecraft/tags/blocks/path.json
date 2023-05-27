@@ -4,6 +4,9 @@
         "minecraft:waxed_exposed_copper",
         "minecraft:waxed_weathered_copper",
         "minecraft:waxed_oxidized_copper",
-        "minecraft:raw_copper_block"
+        "minecraft:raw_copper_block",
+        "minecraft:stone",
+        "minecraft:light_blue_stained_glass",
+        "minecraft:air"
     ]
 }

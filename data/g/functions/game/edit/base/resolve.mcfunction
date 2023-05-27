@@ -1,1 +1,1 @@
-fill ~1 6 ~1 ~ 6 ~ light_blue_stained_glass replace snow
+fill ~1 7 ~1 ~ 7 ~ light_blue_stained_glass replace snow
