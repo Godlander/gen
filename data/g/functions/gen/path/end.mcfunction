@@ -6,10 +6,10 @@ execute if score gen gen matches 1 run tellraw @a [{"text":"Path created with ",
 execute if score gen gen matches 1 run schedule function g:gen/decor/start 1t
 
 #resolve base placement
-scoreboard players set validpaths gen 0
-execute at @e[tag=spawn] if entity @e[tag=tile,distance=..2.1,tag=pathed,tag=!blocked] run scoreboard players add validpaths gen 1
-execute if score validpaths gen = paths gen at @e[tag=place] if block ~ 6 ~ snow run function g:game/edit/base/resolve
-execute if score validpaths gen < paths gen at @e[tag=place] run function g:game/edit/base/reject
+scoreboard players set valid path 0
+execute at @e[tag=spawn] if entity @e[tag=tile,distance=..2.1,tag=pathed,tag=!blocked] run scoreboard players add valid path 1
+execute if score valid path = paths gen at @e[tag=place] if block ~ 6 ~ snow run function g:game/edit/base/resolve
+execute if score valid path < paths gen at @e[tag=place] run function g:game/edit/base/reject
 kill @e[tag=place]
 
 #end path gen

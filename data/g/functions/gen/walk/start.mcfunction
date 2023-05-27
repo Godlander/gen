@@ -1,7 +1,3 @@
-#reset area
-function g:gen/clear
-scoreboard players set gen gen 0
-
 #sanity check
 execute unless score size gen matches 1.. run scoreboard players set size gen 50
 execute unless score paths gen matches 1.. run scoreboard players set paths gen 1
@@ -15,9 +11,9 @@ tellraw @a [{"text":"Generating dungeon with ","color":"gray"},{"text":"size: ",
 tellraw @a [{"text":"Seed: ","color":"gold"},{"score":{"name":"seed","objective":"rand"},"color":"green"}]
 
 #spawn walkers
-scoreboard players add paths gen 1
-scoreboard players set walkers gen 0
-function g:gen/walk/walkers
+scoreboard players operation amount path = paths gen
+scoreboard players operation type path = type gen
+function g:gen/walk/walkers/summon
 
 #start walk
 scoreboard players set blocks gen 0

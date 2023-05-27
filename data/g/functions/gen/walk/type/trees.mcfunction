@@ -15,7 +15,7 @@ execute positioned ~-2 ~ ~2 if block ~ 5 ~ air run function g:gen/walk/tile
 execute positioned ~-2 ~ ~ if block ~ 5 ~ air run function g:gen/walk/tile
 execute positioned ~-2 ~ ~-2 if block ~ 5 ~ air run function g:gen/walk/tile
 
-#walk 4 extra tiles in that direction
+#walk 2 extra tiles in that direction
 execute if score out rand matches 0 run tp @s ~4 5 ~
 execute if score out rand matches 1 run tp @s ~-4 5 ~
 execute if score out rand matches 2 run tp @s ~ 5 ~4
